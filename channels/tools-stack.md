@@ -12,13 +12,13 @@
 | Web search           | Tavily               | Brave              | $        | Both           | ✅     |
 | Deep crawl / dataset | Apify                | Bright Data        | $        | Server         | ✅     |
 | Proxy / hard targets | Bright Data          | —                  | $$       | Server         | ✅     |
-| YouTube transcripts  | yt-dlp (CLI)         | —                  | Free     | Both           | ⬜ TODO |
+| YouTube transcripts  | yt-dlp (CLI)         | —                  | Free     | Both           | ⬜ not using yet |
 | Reddit               | Apify reddit-scraper | Reddit MCP         | $        | Server         | ✅     |
 | Telegram             | Telegram MCP         | —                  | Free     | Local          | ⚠️ session path issue |
 | Apple Notes          | Apple Notes MCP      | —                  | Free     | Local Mac      | ✅ (no commas in titles, use `<div>`) |
 | GitHub               | gh CLI               | —                  | Free     | Both           | ✅     |
-| RSS                  | feedparser (Python)  | —                  | Free     | Both           | ⬜ TODO |
-| Twitter / X          | TODO                 | xreach-cli?        | Free     | Local + cookie | ⬜     |
+| RSS                  | feedparser (Python)  | —                  | Free     | Both           | ⬜ not using yet |
+| Twitter / X          | TODO                 | xreach-cli?        | Free     | Local + cookie | ⬜ not using yet |
 
 ## Decision rules
 - **New agent project:** start by filling this table for the project's needs before writing code.
