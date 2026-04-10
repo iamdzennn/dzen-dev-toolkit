@@ -29,16 +29,22 @@
 
 | Файл | Для чего |
 |------|----------|
-| ~/.ssh/id_ed25519 | Основной ключ (GitHub, серверы) |
+| ~/.ssh/id_ed25519_github | GitHub (оба ноута) |
+| ~/.ssh/id_ed25519_gitlab | GitLab (оба ноута) |
 
-## GitHub
+## GitHub / GitLab
 
-| Репо | Что |
-|------|-----|
-| iamdzennn/zenevich-blogs | Контент блогов, скрипты каналов |
-| iamdzennn/zenevich-events-bot | Telegram бот для ивентов |
-| iamdzennn/dzen-dev-toolkit | Скиллы, MCP, playbooks |
-| iamdzennn/dzen-tools | Инвойсы |
+| Репо | Что | Где |
+|------|-----|-----|
+| iamdzennn/zenevich-blogs | Контент блогов, скрипты каналов | оба |
+| iamdzennn/zenevich-events-bot | Telegram бот для ивентов | оба |
+| iamdzennn/dzen-dev-toolkit | Скиллы, MCP, playbooks | оба |
+| iamdzennn/dzen-tools | Инвойсы | оба |
+| iamdzennn/check-site-AI-readiness | ismysite-ai-ready | личный |
+| iamdzennn/travel-receipts-bot | Бот для чеков (TG + OpenAI) | личный |
+| gitlab: dmitry.zenevich/prompts-testing | Тестирование промтов, скрипты ask_chatgpt/ask_gemini | рабочий |
+| gitlab: dmitry.zenevich/openai-billing-bot | OpenAI billing бот | рабочий |
+| (local only) trendwatching-agent | Трендвотчинг, нет remote | личный |
 
 ## Google Cloud
 
@@ -48,7 +54,7 @@
 ## Как настроить новый ноутбук
 
 1. `git clone git@github.com:iamdzennn/dzen-dev-toolkit.git ~/dev/dzen-dev-toolkit`
-2. Скопировать `.env.master` в `~/.config/dzen-dev-toolkit/.env.master`
-3. `cd ~/dev/dzen-dev-toolkit && ./setup.sh`
+2. `cd ~/dev/dzen-dev-toolkit && ./setup.sh`
+3. Скопировать `.env.master` с другого ноута в `~/.config/dzen-dev-toolkit/.env.master`
 4. Для каждого проекта: `./link-to-project.sh ~/dev/<project>`
-5. SSH ключ: скопировать `~/.ssh/id_ed25519` с другого ноута
+5. SSH ключи: скопировать `~/.ssh/id_ed25519_github` и `~/.ssh/id_ed25519_gitlab` с другого ноута

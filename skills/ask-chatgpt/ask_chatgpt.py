@@ -6,9 +6,9 @@ import os
 import sys
 from pathlib import Path
 
-# Load API keys: ~/.config/claude-skills/.env → project .env → env vars
+# Load API keys: ~/.config/dzen-dev-toolkit/.env.master → project .env → env vars
 for env_path in [
-    Path.home() / ".config" / "claude-skills" / ".env",
+    Path.home() / ".config" / "dzen-dev-toolkit" / ".env.master",
     Path.cwd() / ".env",
 ]:
     if env_path.exists():
@@ -33,7 +33,7 @@ def ask_chatgpt(
 
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        print("ERROR: OPENAI_API_KEY not set. Put it in ~/.config/claude-skills/.env", file=sys.stderr)
+        print("ERROR: OPENAI_API_KEY not set. Put it in ~/.config/dzen-dev-toolkit/.env.master", file=sys.stderr)
         sys.exit(1)
 
     client = OpenAI(api_key=api_key)

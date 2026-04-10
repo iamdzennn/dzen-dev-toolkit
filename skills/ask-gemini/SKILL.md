@@ -19,19 +19,19 @@ You need to consult Gemini 3.1 Pro about an implementation question. Use the `as
 
 3. **Run the script:**
    ```bash
-   python3 ~/.config/claude-skills/ask-gemini/ask_gemini.py "Your question here"
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-gemini/ask_gemini.py "Your question here"
 
    # With context files
-   python3 ~/.config/claude-skills/ask-gemini/ask_gemini.py "question" -c file1.md file2.py
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-gemini/ask_gemini.py "question" -c file1.md file2.py
 
    # With system instruction
-   python3 ~/.config/claude-skills/ask-gemini/ask_gemini.py "question" -s "You are an expert"
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-gemini/ask_gemini.py "question" -s "You are an expert"
 
    # Via stdin
-   echo "long question" | python3 ~/.config/claude-skills/ask-gemini/ask_gemini.py
+   echo "long question" | python3 ~/dev/dzen-dev-toolkit/skills/ask-gemini/ask_gemini.py
 
    # Custom temperature (default 0)
-   python3 ~/.config/claude-skills/ask-gemini/ask_gemini.py "question" -t 0.7
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-gemini/ask_gemini.py "question" -t 0.7
    ```
 
 4. **Present Gemini's response** to the user with your own analysis — agree/disagree/synthesize

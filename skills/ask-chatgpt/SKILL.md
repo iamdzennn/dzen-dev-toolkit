@@ -19,19 +19,19 @@ You need to consult ChatGPT about an implementation question. Use the `ask_chatg
 
 3. **Run the script:**
    ```bash
-   python3 ~/.config/claude-skills/ask-chatgpt/ask_chatgpt.py "Your question here"
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-chatgpt/ask_chatgpt.py "Your question here"
 
    # With context files
-   python3 ~/.config/claude-skills/ask-chatgpt/ask_chatgpt.py "question" -c file1.md file2.py
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-chatgpt/ask_chatgpt.py "question" -c file1.md file2.py
 
    # With system instruction
-   python3 ~/.config/claude-skills/ask-chatgpt/ask_chatgpt.py "question" -s "You are an expert"
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-chatgpt/ask_chatgpt.py "question" -s "You are an expert"
 
    # Via stdin
-   echo "long question" | python3 ~/.config/claude-skills/ask-chatgpt/ask_chatgpt.py
+   echo "long question" | python3 ~/dev/dzen-dev-toolkit/skills/ask-chatgpt/ask_chatgpt.py
 
    # Custom reasoning effort
-   python3 ~/.config/claude-skills/ask-chatgpt/ask_chatgpt.py "question" -r medium
+   python3 ~/dev/dzen-dev-toolkit/skills/ask-chatgpt/ask_chatgpt.py "question" -r medium
    ```
 
 4. **Present ChatGPT's response** to the user with your own analysis — agree/disagree/synthesize

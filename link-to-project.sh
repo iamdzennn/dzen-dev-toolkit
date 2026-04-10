@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
 fi
 
 PROJECT="$1"
-SKILLS_DIR="$HOME/.config/dzen-dev-toolkit"
+REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 if [ ! -d "$PROJECT" ]; then
     echo "ERROR: Project directory not found: $PROJECT"
@@ -17,11 +17,10 @@ fi
 
 mkdir -p "$PROJECT/.claude/skills"
 
-for skill_dir in "$SKILLS_DIR"/ask-*/; do
+for skill_dir in "$REPO_DIR"/skills/ask-*/; do
     skill_name=$(basename "$skill_dir")
     target="$PROJECT/.claude/skills/$skill_name"
     mkdir -p "$target"
-    # Copy SKILL.md (Claude Code reads this to discover the skill)
     cp "$skill_dir/SKILL.md" "$target/SKILL.md"
     echo "  Installed: $skill_name → $target"
 done

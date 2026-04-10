@@ -6,9 +6,9 @@ import os
 import sys
 from pathlib import Path
 
-# Load API keys: ~/.config/claude-skills/.env → project .env → env vars
+# Load API keys: ~/.config/dzen-dev-toolkit/.env.master → project .env → env vars
 for env_path in [
-    Path.home() / ".config" / "claude-skills" / ".env",
+    Path.home() / ".config" / "dzen-dev-toolkit" / ".env.master",
     Path.cwd() / ".env",
 ]:
     if env_path.exists():
@@ -34,7 +34,7 @@ def ask_gemini(
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("ERROR: GEMINI_API_KEY not set. Put it in ~/.config/claude-skills/.env", file=sys.stderr)
+        print("ERROR: GEMINI_API_KEY not set. Put it in ~/.config/dzen-dev-toolkit/.env.master", file=sys.stderr)
         sys.exit(1)
 
     client = genai.Client(api_key=api_key, http_options={"api_version": "v1beta"})
