@@ -1,8 +1,8 @@
 #!/bin/bash
-# Setup claude-skills: install deps + create config dir + symlink skills
+# Setup dzen-dev-toolkit: install deps + create config dir + symlink skills
 set -e
 
-SKILLS_DIR="$HOME/.config/claude-skills"
+SKILLS_DIR="$HOME/.config/dzen-dev-toolkit"
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "=== Claude Skills Setup ==="

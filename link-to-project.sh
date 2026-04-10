@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
 fi
 
 PROJECT="$1"
-SKILLS_DIR="$HOME/.config/claude-skills"
+SKILLS_DIR="$HOME/.config/dzen-dev-toolkit"
 
 if [ ! -d "$PROJECT" ]; then
     echo "ERROR: Project directory not found: $PROJECT"
@@ -29,11 +29,11 @@ done
 # Create TOOLS.md link
 TOOLS_FILE="$PROJECT/TOOLS.md"
 if [ ! -f "$TOOLS_FILE" ]; then
-    echo "See ~/dev/claude-skills for channel maps, MCP configs, doctor script, and playbooks." > "$TOOLS_FILE"
+    echo "See ~/dev/dzen-dev-toolkit for channel maps, MCP configs, doctor script, and playbooks." > "$TOOLS_FILE"
     echo "  Created: TOOLS.md"
 fi
 
 echo ""
 echo "Done! Skills available in $PROJECT"
 echo "  Use /ask-gemini and /ask-chatgpt in Claude Code"
-echo "  Run ~/dev/claude-skills/mcp/doctor.sh to check tool health"
+echo "  Run ~/dev/dzen-dev-toolkit/mcp/doctor.sh to check tool health"

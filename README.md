@@ -1,4 +1,4 @@
-# claude-skills
+# dzen-dev-toolkit
 
 Cross-project toolkit for AI/agent development. One repo, two laptops, all the knowledge.
 
@@ -32,7 +32,7 @@ snippets/        # Reusable code snippets
 Add to your `~/.zshrc`:
 
 ```bash
-alias doctor='~/dev/claude-skills/mcp/doctor.sh'
+alias doctor='~/dev/dzen-dev-toolkit/mcp/doctor.sh'
 ```
 
 ## Linking to projects
@@ -40,7 +40,7 @@ alias doctor='~/dev/claude-skills/mcp/doctor.sh'
 In any agent project, create a `TOOLS.md`:
 
 ```bash
-echo "See ~/dev/claude-skills" > TOOLS.md
+echo "See ~/dev/dzen-dev-toolkit" > TOOLS.md
 ```
 
 Or run the full linker which also installs skills:
