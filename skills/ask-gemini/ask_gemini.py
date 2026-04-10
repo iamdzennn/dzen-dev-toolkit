@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Ask Gemini a question from CLI. Used by Claude Code for consultations."""
 
+from __future__ import annotations
+
 import argparse
 import os
 import sys
