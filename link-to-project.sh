@@ -26,6 +26,14 @@ for skill_dir in "$SKILLS_DIR"/ask-*/; do
     echo "  Installed: $skill_name → $target"
 done
 
+# Create TOOLS.md link
+TOOLS_FILE="$PROJECT/TOOLS.md"
+if [ ! -f "$TOOLS_FILE" ]; then
+    echo "See ~/dev/claude-skills for channel maps, MCP configs, doctor script, and playbooks." > "$TOOLS_FILE"
+    echo "  Created: TOOLS.md"
+fi
+
 echo ""
 echo "Done! Skills available in $PROJECT"
 echo "  Use /ask-gemini and /ask-chatgpt in Claude Code"
+echo "  Run ~/dev/claude-skills/mcp/doctor.sh to check tool health"

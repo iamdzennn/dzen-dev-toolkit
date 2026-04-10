@@ -15,7 +15,7 @@ pip3 install -r "$REPO_DIR/requirements.txt" --quiet
 mkdir -p "$SKILLS_DIR"
 
 # 3. Symlink skill directories
-for skill_dir in "$REPO_DIR"/ask-*/; do
+for skill_dir in "$REPO_DIR"/skills/ask-*/; do
     skill_name=$(basename "$skill_dir")
     target="$SKILLS_DIR/$skill_name"
     if [ -L "$target" ]; then
