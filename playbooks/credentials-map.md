@@ -17,12 +17,15 @@
 | TG_BOT_TOKEN | Telegram Bot API | zenevich-blogs (tg_channel_reader.py) | @BotFather |
 | LIVEKIT_API_KEY | LiveKit (voice) | vox/voxa-agent | cloud.livekit.io |
 | LIVEKIT_API_SECRET | LiveKit (voice) | vox/voxa-agent | cloud.livekit.io |
+| DZEN_OS_BOT_TOKEN | Telegram Bot API | dzen-os bot | @BotFather (@dzen_os_bot) |
+| GITHUB_TOKEN | GitHub API (OAuth from gh CLI) | dzen-os bot | gh auth token |
+| TELEGRAM_USER_ID | Telegram user ID | dzen-os bot (ALLOWED_USERS) | @userinfobot |
 
 ## Серверы
 
 | Имя | IP | SSH | Что там |
 |-----|----|-----|---------|
-| Hetzner (zenevich) | 204.168.142.116 | ssh root@204.168.142.116 | Telegram бот @zenevich_events_bot, systemd: zenevich-bot.service |
+| Hetzner (zenevich) | 204.168.142.116 | ssh root@204.168.142.116 | Telegram бот @zenevich_events_bot (zenevich-bot.service), dzen-os-bot (dzen-os-bot.service) |
 | Hetzner (voora-n8n) | 46.62.225.46 | ssh root@n8n.voora.live | n8n в Docker, UI: http://n8n.voora.live:5678 |
 
 ## SSH ключи
@@ -39,6 +42,7 @@
 | iamdzennn/zenevich-blogs | Контент блогов, скрипты каналов | оба |
 | iamdzennn/zenevich-events-bot | Telegram бот для ивентов | оба |
 | iamdzennn/dzen-dev-toolkit | Скиллы, MCP, playbooks | оба |
+| iamdzennn/dzen-os | Personal OS: knowledge base, decisions, wiki | оба |
 | iamdzennn/dzen-tools | Инвойсы | оба |
 | iamdzennn/check-site-AI-readiness | ismysite-ai-ready | личный |
 | iamdzennn/travel-receipts-bot | Бот для чеков (TG + OpenAI) | личный |
