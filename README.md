@@ -14,6 +14,11 @@ API keys live in `~/.config/dzen-dev-toolkit/.env.master` (not in the repo). Scr
 skills/                    # Claude Code custom skills
   ask-chatgpt/             #   GPT-5.4 consultation (SKILL.md + Python script)
   ask-gemini/              #   Gemini 3.1 Pro consultation
+  download-yt/             #   YouTube video/audio downloader via yt-dlp
+  transcribe/              #   Transcribe video/audio to .md (whisper.cpp)
+  summarize-yt/            #   Summarize transcript via GPT-5.4
+  screenshots-yt/          #   Extract screenshots at timestamps from summary
+  analyse-yt/              #   Full pipeline: download → transcribe → summarize → screenshots
 channels/
   tools-stack.md           #   Which tool for which scenario (scraping, search, etc.)
 mcp/
