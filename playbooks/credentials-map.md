@@ -20,6 +20,8 @@
 | DZEN_OS_BOT_TOKEN | Telegram Bot API | dzen-os bot | @BotFather (@dzen_os_bot) |
 | GITHUB_TOKEN | GitHub API (OAuth from gh CLI) | dzen-os bot | gh auth token |
 | TELEGRAM_USER_ID | Telegram user ID | dzen-os bot (ALLOWED_USERS) | @userinfobot |
+| TELEGRAM_API_ID | Telegram MTProto (Telethon) — read personal account | zenevich-blogs, dzen-os (planned) | my.telegram.org |
+| TELEGRAM_API_HASH | Telegram MTProto (Telethon) — read personal account | zenevich-blogs, dzen-os (planned) | my.telegram.org |
 
 ## Серверы
 
